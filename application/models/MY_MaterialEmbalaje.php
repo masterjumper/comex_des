@@ -80,7 +80,7 @@ Class MY_MaterialEmbalaje extends CI_Model
     {
         $this->db->select('count(*)');
         $this->db->where('matembid', $matembid);
-        $this->db->from('materialembalaje');
+        $this->db->from('negocioxmaterialembalaje');
         $query = $this -> db ->get() ->row('count(*)');
         return $query;        
     } */
